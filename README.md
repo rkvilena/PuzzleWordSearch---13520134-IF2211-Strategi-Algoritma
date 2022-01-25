@@ -1,13 +1,13 @@
-## Puzzle Word Search
+# Puzzle Word Search
 Implementasi algoritma brute force berupa pencocokan string.
 Program menerima masukan berupa file yang berisi data matriks dan list kata yang dicari.
 Tampilan program yang digunakan berbasis CLI.
 
-# Requirement
+## Requirement
 - Kakas Java (misalnya JDK)
 - VS Code (apabila tidak ingin melakukan eksekusi melalui file .jar)
 
-# How to Run
+## How to Run
 - Apabila memiliki vscode dan kakas java
     1. Buka file "Main.java" di folder src melalui vscode
     2. Lakukan run.
