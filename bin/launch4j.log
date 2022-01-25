@@ -1,0 +1,30 @@
+
+
+Version:	3.14
+CmdLine:	E:\ITB\MATERI KULIAH\Teknik Informatika\Semester 4\Strategi Algoritma\Tugas Kecil\tucil1\String Matcher\bin\PuzzleWordSearch.exe --l4j-debug
+WOW64:		yes
+Working dir:	E:\ITB\MATERI KULIAH\Teknik Informatika\Semester 4\Strategi Algoritma\Tugas Kecil\tucil1\String Matcher\bin\.
+Java min ver:	1.011.000_000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_301
+Ignore:		1.008.000_301
+32-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+32-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11
+Ignore:		1.011.000
+Check:		SOFTWARE\JavaSoft\JDK\11.0.12.7
+Warning:	formatJavaVersion() too many parts added.
+Check launcher:	C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin\javaw.exe (OK)
+Match:		1.011.000_012
+Runtime used:	1.011.000_012 (64-bit)
+Launcher:	C:\Program Files\Eclipse Foundation\jdk-11.0.12.7-hotspot\bin\javaw.exe
+Launcher args:	-jar "E:\ITB\MATERI KULIAH\Teknik Informatika\Semester 4\Strategi Algoritma\Tugas Kecil\tucil1\String Matcher\bin\PuzzleWordSearch.exe"
+Args length:	135/32768 chars
+Exit code:	0
