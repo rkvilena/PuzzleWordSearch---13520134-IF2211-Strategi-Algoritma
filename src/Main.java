@@ -84,7 +84,7 @@ public class Main {
 
     // Menampilkan matrix
     public static void displayMat(char[][] matrix, String word){
-        System.out.println(">> WORD : " + word);
+        System.out.println("> WORD : " + word);
         for (int i = 0; i < matrix.length; i++){
             System.out.print(" |");
             for (int j = 0; j < matrix[0].length; j++){
@@ -128,7 +128,9 @@ public class Main {
 
     // Horizontal Kanan
     public static String[] horizontalRight(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Horizontal Right direction");
         boolean filled = false;
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -155,18 +157,22 @@ public class Main {
                             initializeMat(resultmat);
                             filled = false;
                         }
+                        jumlahpengecekan = jumlahpengecekan + j + 1;
                         i++;
                     }
                     h++;
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 
     // Horizontal Kiri
     public static String[] horizontalLeft(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Horizontal Left direction");
         boolean filled = false;
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -193,18 +199,22 @@ public class Main {
                             initializeMat(resultmat);
                             filled = false;
                         }
+                        jumlahpengecekan = jumlahpengecekan + j + 1;
                         i -= 1;
                     }
                     h++;
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 
     // Vertikal Bawah
     public static String[] verticalDown(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Vertical Down direction");
         boolean filled = false;
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -231,18 +241,22 @@ public class Main {
                             initializeMat(resultmat);
                             filled = false;
                         }
+                        jumlahpengecekan = jumlahpengecekan + j + 1;
                         i++;
                     }
                     h++;
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 
     // Vertikal Atas
     public static String[] verticalUp(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Vertical Up direction");
         boolean filled = false;
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -269,19 +283,22 @@ public class Main {
                             initializeMat(resultmat);
                             filled = false;
                         }
+                        jumlahpengecekan = jumlahpengecekan + j + 1;
                         i--;
                     }
                     h++;
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 
     // Arah tenggara
     public static String[] southEast(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Southeast direction");
         boolean filled = false;
-
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -309,6 +326,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i++;
                         }
@@ -335,6 +353,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i++;
                         }
@@ -362,6 +381,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i++;
                         }
@@ -388,6 +408,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i++;
                         }
@@ -396,13 +417,15 @@ public class Main {
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 
     // Arah timur laut
     public static String[] northEast(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Northeast direction");
         boolean filled = false;
-
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -430,6 +453,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i++;
                         }
@@ -456,6 +480,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i++;
                         }
@@ -483,6 +508,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i++;
                         }
@@ -509,6 +535,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i++;
                         }
@@ -517,13 +544,15 @@ public class Main {
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
     
     // Arah barat daya
     public static String[] southWest(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Southwest direction");
         boolean filled = false;
-
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -551,6 +580,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i--;
                         }
@@ -577,6 +607,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i--;
                         }
@@ -604,6 +635,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i--;
                         }
@@ -630,6 +662,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h++;
                             i--;
                         }
@@ -638,13 +671,15 @@ public class Main {
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 
     // Arah Barat laut
     public static String[] northWest(char[][] puzzlemat, char[][] resultmat, String[] targetarr){
+        System.out.println(">> Northwest direction");
         boolean filled = false;
-
+        int jumlahpengecekan = 0;
         for (int g = 0; g  < targetarr.length; g++){
             if (targetarr[g] != null){
                 String targetword = targetarr[g];
@@ -672,6 +707,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i--;
                         }
@@ -698,6 +734,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i--;
                         }
@@ -726,6 +763,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i--;
                         }
@@ -751,6 +789,7 @@ public class Main {
                                 initializeMat(resultmat);
                                 filled = false;
                             }
+                            jumlahpengecekan = jumlahpengecekan + j + 1;
                             h--;
                             i--;
                         }
@@ -759,6 +798,7 @@ public class Main {
                 }
             }
         }
+        System.out.println("Jumlah huruf yang dicek : " + jumlahpengecekan);
         return targetarr;
     }
 }
